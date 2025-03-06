@@ -1,0 +1,122 @@
+.full-container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8fc;
+  border-radius: 20px;
+  gap: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.title-container {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1d3557;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.category-title {
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-content-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-container-left {
+  padding-right: 20px;
+}
+
+.heading-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+.category-bullets-container,
+.category-features-container {
+  margin-top: 10px;
+}
+
+.category-bullets,
+.category-features {
+  list-style: none;
+  padding: 0;
+}
+
+.category-bullets li,
+.category-features li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.category-bullets li::before,
+.category-features li::before {
+  content: "•";
+  color: #ff6b6b;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.card-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.btn-container {
+  margin-top: 15px;
+}
+
+.btn-container button {
+  background-color: #008aff;
+  color: white;
+  font-size: 14px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-container button:hover {
+  background-color: #005fbb;
+}

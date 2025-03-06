@@ -1,15 +1,19 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
 import "../Styles/Categories.css";
-import "../Constant/CategoriesData.js";
-
-
+import { categoriesData } from "../Constant/CategoriesData.js";
 
 const Categories = () => {
-  
+  console.log(categoriesData);
+
   return (
     <div>
-      <CategoryCard />
+
+      {/* <CategoryCard data={categoriesData[0]}/> */}
+     
+      {categoriesData.map((category) => (
+        <CategoryCard data={category} />
+      ))}
     </div>
   );
 };

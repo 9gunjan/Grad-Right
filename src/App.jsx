@@ -9,8 +9,8 @@ function App() {
     <div className="main">
       <Header />
       <PartOne />
-      <Categories />
       <Stats />
+      <Categories />
     </div>
   );
 }

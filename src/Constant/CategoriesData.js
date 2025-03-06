@@ -1,6 +1,5 @@
 export const categoriesData = [
   {
-    
     title: "Master's Program",
     heading: "Find your best-matched graduate program on SelectRight",
     bullets: [
@@ -18,7 +17,9 @@ export const categoriesData = [
         feature2: "Completely free for students",
         feature3: "Exclusive scholarships",
       },
+      
     ],
+    buttonName:"Select Programs"
   },
   {
     title: "Education Loans",
@@ -37,6 +38,7 @@ export const categoriesData = [
         feature3: "Fast approvals",
       },
     ],
+    buttonName:"Get Loan Offers"
   },
   {
     title: "Health Insurance",
@@ -55,9 +57,9 @@ export const categoriesData = [
         feature3: "100% copayment",
       },
     ],
+    buttonName:"Get Health Insurance"
   },
   {
-
     title: "Other Essentials",
     heading:
       "Get help with forex, travel cards, and accommodation on ServiceRight",
@@ -77,5 +79,6 @@ export const categoriesData = [
         feature3: "Affordable accommodation",
       },
     ],
+    buttonName:"Get Essential Services"
   },
 ];
