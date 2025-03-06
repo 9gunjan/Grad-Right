@@ -1,0 +1,33 @@
+.parent-container{
+  display: flex;
+  gap:20px;
+  height: 180px;
+}
+
+
+
+.section{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  height: 100%;
+}
+
+
+
+.card{
+  padding:16px 6px;
+  background-color:#39617d ;
+  color:white;
+  width:fit-content;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  height: 100%;
+
+}
+
