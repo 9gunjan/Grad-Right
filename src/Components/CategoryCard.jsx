@@ -1,15 +1,14 @@
 import React from "react";
 import "../Styles/Categories.css";
+import { categoriesData } from "../Constant/CategoriesData";
 
 const CategoryCard = ({ data = {} }) => {
+  // console.log(Object.values(data.bullets[0]));
+  // output of above = ['Shortlist from 40,000+ programs abroad with AI-powered selection', 'Receive personalized mentorship from selection to enrollment', 'Connect directly with admissions officers, faculty, and alumni']
+  //now i can just map on this array and show the values of bullet inside my <li></li> below :)
+
   return (
     <div className="full-container-box">
-      <div className="card-nav-container">
-        <div className="title-container">
-          <div className="category-title">{data.title}</div>
-        </div>
-      </div>
-
       <div className="card-content-container">
         <div className="card-container-left">
           <div className="heading-container">
@@ -36,12 +35,14 @@ const CategoryCard = ({ data = {} }) => {
         {/* Right container (if needed) */}
         <div className="card-container-right">
           <div className="image-container">
-            <img className="image" src="https://picsum.photos/200/300" alt="img"></img> 
-
+            <img
+              className="image"
+              src="https://picsum.photos/200/300"
+              alt="img"
+            ></img>
           </div>
           <div className="btn-container">
             <button>{data.buttonName}</button>
-
           </div>
         </div>
       </div>

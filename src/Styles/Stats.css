@@ -4,7 +4,8 @@
   height: 180px;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 40px;
+  padding: 40px;
   
 }
 
@@ -27,12 +28,13 @@
   width:fit-content;
   display: flex;
   flex-direction: column;
-  min-width: 120px;
+  min-width: 200px;
   justify-content: center;
   align-items: center;
   padding: 20px;
   border-radius: 20px;
   height: 100%;
+  font-size: larger;
 
 }
 

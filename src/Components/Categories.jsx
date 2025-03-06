@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import CategoryCard from "./CategoryCard";
 import "../Styles/Categories.css";
 import { categoriesData } from "../Constant/CategoriesData.js";
 
 const Categories = () => {
-  console.log(categoriesData);
+  const [activeCategory, setActiveCategory] = useState(categoriesData[0].title);
 
   return (
     <div>
+      <div className="title-container">
+        {categoriesData.map((category) => (
+          <button
+            key={category.title}
+            className={`category-title ${
+              activeCategory === category.title ? "active" : ""
+            }`}
+            onClick={() => setActiveCategory(category.title)}
+          >
+            {category.title}
+          </button>
+        ))}
+      </div>
 
-      {/* <CategoryCard data={categoriesData[0]}/> */}
-     
-      {categoriesData.map((category) => (
-        <CategoryCard data={category} />
-      ))}
+    
+      {categoriesData
+        .filter((category) => category.title === activeCategory)
+        .map((category) => (
+          <CategoryCard key={category.title} data={category} />
+        ))}
     </div>
   );
 };
