@@ -32,7 +32,7 @@ const CategoryCard = ({ data = {} }) => {
           </div>
         </div>
 
-        {/* Right container (if needed) */}
+        
         <div className="card-container-right">
           <div className="image-container">
             <img
