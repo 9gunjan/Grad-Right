@@ -1,0 +1,78 @@
+.success-stories {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e1e0e6;
+}
+
+.stories-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.title{
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.story-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.story-card .icon {
+  font-size: 30px;
+  color: #f97316;
+}
+
+.story-card .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.story-card .name {
+  font-weight: bold;
+}
+
+.story-card .university {
+  font-size: 14px;
+  color: gray;
+}
+
+.story-card.expanded {
+  width: 300px;
+  text-align: left;
+  padding: 30px;
+}
+
+.expanded-content {
+  text-align: left;
+}
+
+.expanded-content .quote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

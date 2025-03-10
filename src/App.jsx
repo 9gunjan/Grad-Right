@@ -3,6 +3,7 @@ import Categories from "./Components/Categories";
 import Header from "./Components/Header";
 import PartOne from "./Components/PartOne";
 import Stats from "./Components/Stats";
+import SuccessStories from "./Components/SuccessStories";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <PartOne />
       <Stats />
       <Categories />
+      <SuccessStories/>
     </div>
   );
 }
